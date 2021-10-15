@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import data from '../data/data'
 import Education from './Education'
+import Experience from './Experience'
 import Personal from './Personal'
 import Skills from './Skills'
 
@@ -19,6 +20,9 @@ const Tabs = () => {
         }
         else if(value === info[2]){
             return <Education />
+        }
+        else if(value === info[3]){
+            return <Experience />
         }
     }
 
