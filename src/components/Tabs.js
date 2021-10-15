@@ -21,7 +21,10 @@ const Tabs = () => {
                 <div className="btn-container">
                     {
                         info.map((item, index) => {
-                            return <button key={item.id} className="tabs-btn" onClick={() => setValue(info[index])}>
+                            return <button 
+                                        key={item.id}
+                                        className={`tabs-btn ${info[index] === value && 'active-btn'} `}
+                                        onClick={() => setValue(info[index])}>
                                 {item.tab}
                             </button>
                         })
@@ -67,6 +70,10 @@ const TabsStyled = styled.div`
                     border-bottom: 2px solid #000;
                     opacity: 1;
                 }
+            }
+            .active-btn {
+                opacity: 1;
+                border-bottom: 2px solid #000;
             }
         }
     }
