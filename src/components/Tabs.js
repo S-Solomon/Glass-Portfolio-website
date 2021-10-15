@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import data from '../data/data'
+import Personal from './Personal'
 import Skills from './Skills'
 
 const Tabs = () => {
@@ -10,6 +11,9 @@ const Tabs = () => {
     const renderData = () => {
         if(value === info[0]){
             return <Skills info={info} />
+        }
+        else if(value === info[1]){
+            return <Personal />
         }
     }
 
