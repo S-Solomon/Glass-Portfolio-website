@@ -43,7 +43,7 @@ const TimeLineStyled = styled.div`
                 padding-bottom: 3rem;
             }
             h5::before{
-                content: 'ss';
+                content: '';
                 position: absolute;
                 width: 15px;
                 height: 15px;
