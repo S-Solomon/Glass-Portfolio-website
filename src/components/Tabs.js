@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import data from '../data/data'
+import Education from './Education'
 import Personal from './Personal'
 import Skills from './Skills'
 
 const Tabs = () => {
+    // eslint-disable-next-line
     const [info, setInfo] = useState(data);
     const [value, setValue] = useState(0)
 
@@ -14,6 +16,9 @@ const Tabs = () => {
         }
         else if(value === info[1]){
             return <Personal />
+        }
+        else if(value === info[2]){
+            return <Education />
         }
     }
 
