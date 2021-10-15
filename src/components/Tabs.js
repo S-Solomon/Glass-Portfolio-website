@@ -5,6 +5,7 @@ import Education from './Education'
 import Experience from './Experience'
 import Personal from './Personal'
 import Skills from './Skills'
+import About from './About'
 
 const Tabs = () => {
     // eslint-disable-next-line
@@ -23,6 +24,9 @@ const Tabs = () => {
         }
         else if(value === info[3]){
             return <Experience />
+        }
+        else if(value === info[4]){
+            return <About />
         }
     }
 
